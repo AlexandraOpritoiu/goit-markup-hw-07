@@ -43,19 +43,23 @@ ul {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 .contacts-header-container ul {
     display: none
 }
 
-.topline-container {
-    width: 1200px;
+.topline-container-desktop {
+   
     height: 60px;
     border-bottom: 1px solid #ECECEC;
 }
+.topline-container-tablet {
+    display: none;
+}
 
-/*.topline-container a {
+/*.topline-container-desktop a {
     position: relative;
     top: 5px;
     left: 10px;
@@ -112,6 +116,7 @@ ul {
     font-size: 26px;
     line-height: 2.18;
     color: #fff;
+    
 }
 
 .logo .first-logo {
@@ -324,6 +329,7 @@ ul {
 .our-team-m .card {
     padding-left: 15px;
     padding-right: 15px;
+    margin: auto;
 }
 
 .our-team-m .card li {
@@ -1037,6 +1043,7 @@ textarea:focus {
     z-index: 1;
     width:480px;
     height: 732px;
+    
 }
 .js-menu-container .menu-drawer-navigation ul{
     display: flex;
@@ -1062,7 +1069,7 @@ textarea:focus {
     flex-direction: column;
     gap: 20px;
     text-decoration: none;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
    
 }
 
@@ -1125,10 +1132,8 @@ font-family: Roboto;
     top:10px;
     right:20px;
     border: none;
+    cursor: pointer;
 }
-
-
-
 
 
 /*Tablet*/
@@ -1137,51 +1142,76 @@ font-family: Roboto;
     .menu-button {
         display: none;
     }
-.contacts-header-container ul {
+
+.topline-container-tablet .contacts-header-container ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 10px;
+  
 }
 
-.contacts-header .header-mail {
+.topline-container-tablet .contacts-header .header-mail {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 4px;
 }
 
-.contacts-header .header-phone {
+.topline-container-tablet .contacts-header .header-phone {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 3px;
 }
-.nav-container ul {
+.topline-container-tablet .nav-container ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: 50px;
+        column-gap: 30px;
+        margin-left: 80px;
+        
 }
-
-
-.topline-container {
+.topline-container-tablet {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
-        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
         height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: 200px;
-        margin-right: 200px;
         border-bottom: 1px solid #ECECEC;
+        margin: auto;
+    }
+
+ .topline-container-tablet .contacts-header-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-left: 160px;
+    margin-right: 15px;
+ }
+    .topline-container-desktop{
+        display: none;
     }
 .current{
     border-bottom: 4px solid #2196F3;
     border-radius: 2px;
+}
+.topline-container-tablet.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 2.18;
+    color: #fff;
+    padding-left: 15px;
 }
 
     .first-section {
@@ -1562,11 +1592,11 @@ font-family: Roboto;
 @media screen and (min-width: 1158px) {
 
     .contacts-header-container ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 40px;
-    }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 40px;
+        }
 
     .contacts-header .header-mail {
         display: flex;
@@ -1582,6 +1612,29 @@ font-family: Roboto;
         column-gap: 3px;
     }
 
+.topline-container-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-bottom: 1px solid #ECECEC;
+}
+.topline-container-tablet{
+    display: none;
+}
+.nav-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
     .first-section {
         display: flex;
         flex-direction: column;
@@ -1720,91 +1773,90 @@ font-family: Roboto;
 
     /*Our team section*/
 
-    .fourth-section .our-team-m {
-        display: none;
-    }
-
-    .fourth-section .our-team-d {
-        display: block;
-    }
-
-    .fourth-section {
-        background-color: #F5F4FA;
-        width: 1600px;
-        margin: auto;
-    }
-
-    .fourth-section ul {
-        display: flex;
-        justify-content: space-between;
-        width: 1200px;
-        column-gap: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: 200px;
-        margin-left: 200px;
-        padding-bottom: 94px;
-        margin: auto;
-    }
-
-    .fourth-section h2 {
-        font-weight: 700px;
-        font-size: 36px;
-        line-height: 3.01;
-        text-align: center;
-        color: var(--header-color);
-        padding-top: 94px;
-    }
-
-    .fourth-section p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.33;
-        text-align: center;
-        color: var(--text-color);
-    }
-
-    .fourth-section h3 {
-        font-weight: 500px;
-        font-size: 16px;
-        line-height: 1.33;
-        text-align: center;
-        color: var(--header-color);
-    }
-
-    .text-section h3 {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2.57;
-        color: var(--header-color);
-        padding-top: 20px;
-    }
-
-    .text-section span {
-        font-weight: 400px;
-        font-size: 16px;
-        line-height: 2.14;
-        color: var(--text-color);
-        padding-bottom: 20px;
-    }
-
-    .card li {
-        background-color: #fff;
-        width: 270px;
-    }
-
-    .card-text {
-        padding-top: 30px;
-        row-gap: 2px;
-        padding-bottom: 16px;
-    }
-
-
-    .team-image-d {
-        width: 270px;
-        height: 260px;
-    }
-
+        .fourth-section .our-team-m {
+            display: none;
+        }
+    
+        .fourth-section .our-team-d {
+            display: block;
+        }
+    
+        .fourth-section {
+            background-color: #F5F4FA;
+            width: 1600px;
+            margin: auto;
+        }
+    
+        .fourth-section ul {
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+            column-gap: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-right: 200px;
+            margin-left: 200px;
+            padding-bottom: 94px;
+            margin: auto;
+        }
+    
+        .fourth-section h2 {
+            font-weight: 700px;
+            font-size: 36px;
+            line-height: 3.01;
+            text-align: center;
+            color: var(--header-color);
+            padding-top: 94px;
+        }
+    
+        .fourth-section p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.33;
+            text-align: center;
+            color: var(--text-color);
+        }
+    
+        .fourth-section h3 {
+            font-weight: 500px;
+            font-size: 16px;
+            line-height: 1.33;
+            text-align: center;
+            color: var(--header-color);
+        }
+    
+        .text-section h3 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2.57;
+            color: var(--header-color);
+            padding-top: 20px;
+        }
+    
+        .text-section span {
+            font-weight: 400px;
+            font-size: 16px;
+            line-height: 2.14;
+            color: var(--text-color);
+            padding-bottom: 20px;
+        }
+    
+        .card li {
+            background-color: #fff;
+            width: 270px;
+        }
+    
+        .card-text {
+            padding-top: 30px;
+            row-gap: 2px;
+            padding-bottom: 16px;
+        }
+    
+    
+        .team-image-d {
+            width: 270px;
+            height: 260px;
+        }
     /*Regular Customers section*/
 
     .icon-customers {
@@ -2045,4 +2097,5 @@ font-family: Roboto;
                 background-image: url('../images/effective-solutions-2x-d.png');
             }
 
+}
 }
