@@ -116,6 +116,7 @@ ul {
     font-size: 26px;
     line-height: 2.18;
     color: #fff;
+    padding-left: 15px;
     
 }
 
@@ -1255,6 +1256,7 @@ font-family: Roboto;
     
         .second-section .feature-container-m li {
             width: 354px;
+            margin: auto;
         
         }
     
