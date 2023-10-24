@@ -20,30 +20,26 @@
       </svg>
     </button>
     <nav class="menu-drawer-navigation">
-      <ul>
+      <ul class="links-js-container">
         <li><a class="link" href=" index.html" target="_self"><span class="current">Studio</span></a></li>
         <li><a class="link" href="./portfolio.html" target="_self">Portfolio</a></li>
         <li>Contacts</li>
       </ul>
-      <ul>
+      <ul class="contacts-js-container">
         <li>
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link tel-js-container" href="tel:+12127724150">+1 212-772-4150</a>
         </li>
         <li>
-          <a class="link" href="tel:+12127724150">+1 212-772-4150</a>
+          <a class="link mail-js-container" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
+
       </ul>
-      <div>
+      <div class="social-links-js-container">
         <span>Instagram</span>
-        <img src="./images/Line 1.png" alt="line-between-social-media">
         <span>Twitter</span>
-        <img src="./images/Line 1.png" alt="line-between-social-media">
         <span>Facebook</span>
-        <img src="./images/Line 1.png" alt="line-between-social-media">
         <span>Linkedin</span>
       </div>
-
-
     </nav>
   </div>
   <!--Buton-fereastra-modala-->
@@ -63,7 +59,6 @@
             </svg>
           </div>
         </div>
-
         <div class="form-section">
           <label class="form-label" for="telephone">Telephone</label>
           <div class="input-container"><input class="textfield" type=" tel" name="phone-number" id="telephone" />
@@ -72,7 +67,6 @@
             </svg>
           </div>
         </div>
-
         <div class="form-section">
           <label class="form-label" for="email">E-mail</label>
           <div class="input-container"><input class="textfield" type="email" name="email" id="email" />
@@ -80,17 +74,13 @@
               <use href="./symbol-defs.svg#icon-email-black-18dp-11" />
             </svg>
           </div>
-
         </div>
-
         <div class="input-container"><label>Comments</label>
           <textarea name="Comments" placeholder="Enter the text"></textarea>
         </div>
-
         <div class="input-container terms-and-conditions-container">
           <input class="terms-and-conditions-check" type="checkbox" name="terms-and-conditions-check"
             id="terms-and-conditions-check" value="checked" />
-
           <label class="terms-and-conditions-label" for="terms-and-conditions-check">
             <svg class="icon-checkbox">
               <use href="./symbol-defs.svg#icon-Vector"></use>
@@ -105,13 +95,11 @@
       </form>
     </div>
   </div>
-
   <header class=" header-section">
     <div class="topline-container">
       <a class="logo" href="#">
         <span class="first-logo">Web</span>
         <span class="second-logo">Studio</span></a>
-
       <nav class="nav-container">
         <ul class="navigation-section">
           <li><a class="link" href=" index.html" target="_self"><span class="current">Studio</span></a></li>
@@ -128,7 +116,6 @@
               </svg>
               <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </div>
-
           </li>
           <li>
             <div class="header-phone">
@@ -137,7 +124,6 @@
               </svg>
               <a class="link" href="tel:+12127724150">+1 212-772-4150</a>
             </div>
-
           </li>
         </ul>
       </div>
@@ -146,9 +132,7 @@
           <use href="./symbol-defs.svg#icon-menu_40px"></use>
         </svg>
       </div>
-
     </div>
-
   </header>
 
 
@@ -324,14 +308,14 @@
             <picture>
               <!--Desktop-->
               <source media="(min-width:1158px)" srcset="./images/Cristopher.png 1x, 
-              ./images/Cristopher-2xd.png 2x,
-              " />
+              ./images/Cristopher-2xd.png 2x" />
 
               <!--Tablet-->
-              <source media=" (min-width:768px)" srcset="./images/Cristopher-t.png" />
+              <source media=" (min-width:768px)" srcset="./images/Cristopher-t.png 1x,
+              ./images/Cristopher-2xt.png 2x" />
 
               <!--Mobile-->
-              <source srcset="./images/Cristopher-m.png" />
+              <source srcset="./images/Cristopher-m.png 1x, ./images/Cristopher-2xm.png 2x" />
 
               <img src="./images/Cristopher.jpg" alt="Cristopher Walker" class="team-image-d" />
             </picture>
@@ -359,13 +343,13 @@
           <li>
             <picture>
               <!--Desktop-->
-              <source media="(min-width:1158px)" srcset="./images/Kylie.png" />
+              <source media="(min-width:1158px)" srcset="./images/Kylie.png ./images/Kylie-2xd.png 2x" />
 
               <!--Tablet-->
-              <source media="(min-width:768px)" srcset="./images/Kylie-t.png" />
+              <source media="(min-width:768px)" srcset="./images/Kylie-t.png 1x, ./images/Kylie-2xt 2x" />
 
               <!--Mobile-->
-              <source srcset="./images/Kylie-m.png" />
+              <source srcset="./images/Kylie-m.png 1x ./images/Kylie-2xm.png 2x" />
 
               <img src="./images/Kylie.png" alt="Kylie Evans" class="team-image-d" />
             </picture>
@@ -392,9 +376,9 @@
           </li>
           <li>
             <picture>
-              <source media="(min-width:1158px)" srcset="./images/Ryan.png" />
-              <source media="(min-width:768px)" srcset="./images/Ryan-t.png" />
-              <source srcset="./images/Ryan-m.jpg" />
+              <source media="(min-width:1158px)" srcset="./images/Ryan.png 1x, ./images/Ryan-2xd.png 2x" />
+              <source media="(min-width:768px)" srcset="./images/Ryan-t.png 1x, ./images/Ryan-2xt 2x" />
+              <source srcset="./images/Ryan.png 1x, ./images/Ryan-2xm 2x" />
               <img src="./images/Ryan.png" alt="Ryan Harris" class="team-image-d" />
             </picture>
             <div class=" card-text">
@@ -797,7 +781,7 @@
 
 
   <script src="./js/modal.js"></script>
-  <script defer src=". /js/mobile-menu.js">
+  <script defer src="./js/mobile-menu.js">
   </script>
 </body>
 
