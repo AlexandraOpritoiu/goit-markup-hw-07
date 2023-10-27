@@ -371,30 +371,23 @@ ul {
 .customers-section .regular-customers-d {
     display: none;
 }
-.customers-section .regular-customers-mobile {
-    width: 100%;
-    margin: auto;
-}
-.regular-customers-mobile ul {
+
+.regular-customers-mobile ul{
     display: flex;
-    flex-direction: row;
+    
     flex-wrap: wrap;
     gap: 15px;
     padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+        padding-right: 15px;
+    margin-bottom: 60px;  
+   
 }
 
-/*.regular-customers-mobile {
-    column-count: 2;
-    column-gap: 30;
-    column-rule-width: 336px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+.regular-customers-mobile li {
+    margin: auto;
+    width: 47%;
 }
-*/
+
 .icon-customers {
     width: 106px;
     height: 60px;
@@ -407,17 +400,15 @@ ul {
 }
 
 .customers {
-    width: 210px;
+    width: 100%;
     height: 92px;
     radius: 4px;
     border: 1px solid #AFB1B8;
     fill: #AFB1B8;
     transition: var(--transition);
+    margin: auto;
 }
 
-.regular-customers-mobile li{
-    flex-basis: calc(( 100%-30px ) / 2);
-}
 
 .customers-section h2 {
     font-weight: 700px;
@@ -954,7 +945,6 @@ textarea:focus {
     cursor: pointer;
     padding-top: 20px;
     padding-bottom: 30px;
-
 }
 
 .terms-and-conditions-label span {
@@ -1027,7 +1017,7 @@ textarea:focus {
     background-color: #fff;
     padding: 48px 40px;
     z-index: 1;
-    width:480px;
+    width:100%
     height: 732px;
     
     
@@ -1039,7 +1029,7 @@ textarea:focus {
     margin-top: 35px;
     margin-bottom: 170px;
     text-decoration: none; 
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .js-menu-container .menu-drawer-navigation li{
@@ -1090,11 +1080,10 @@ color:rgba(117, 117, 117, 1);
     display: flex;
     flex-direction: row;
     gap: 10px;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .js-menu-container .social-links-js-container span{
-font-family: Roboto;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
@@ -1138,25 +1127,16 @@ font-family: Roboto;
 
 .topline-container-tablet .contacts-header-container ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 10px;
+    flex-direction: column;
+    gap: 10px;
     padding-right: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
-.topline-container-tablet .contacts-header .header-mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 4px;
-}
-
-.topline-container-tablet .contacts-header .header-phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 3px;
-}
 .topline-container-tablet .nav-container ul {
         display: flex;
         justify-content: space-between;
@@ -1175,17 +1155,6 @@ font-family: Roboto;
         border-bottom: 1px solid #ECECEC;
         margin: auto;
     }
-
- .topline-container-tablet .contacts-header-container ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    text-align: left;
- }
 
 .topline-container-desktop{
         display: none;
@@ -1245,21 +1214,6 @@ font-family: Roboto;
     margin: auto; 
 }
     
-.second-section .feature-container-m .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F5F4FA;
-    padding: 25px 100px;
-    border-radius: 4px;   
-}
-    
-.feature-container-m .feature-text h3 {
-    margin-bottom: 10px;
-    margin-top: 30px;
-    text-align: center;
-}
-
 .fourth-section .our-team-m {
     background-color: #F5F4FA;
     margin: auto;
@@ -1330,63 +1284,33 @@ font-family: Roboto;
         margin: auto;
     }
 
-         .customers-section .regular-customers-d {
+.customers-section .regular-customers-d {
              display: none;
          }
-    
-         .regular-customers-mobile {
-             column-count: 3;
-             column-gap: 10;
-             margin-bottom: 30px;
-             margin-top: 20px;
-             padding-left: 15px;
-             padding-right: 15px;
-         }
-    
-         .icon-customers {
-             width: 106px;
-             height: 60px;
-             margin-top: 16px;
-             margin-right: 52px;
-             margin-left: 52px;
-             margin-bottom: 16px;
-             display: flex;
-             align-items: center;
-         }
-    
-         .customers {
+
+.customers {
              width: 226px;
              height: 92px;
              radius: 4px;
              border: 1px solid #AFB1B8;
              fill: #AFB1B8;
              transition: var(--transition);
-         }
+}
     
-         .regular-customers-mobile ul {
-             display: flex;
-             flex-direction: column;
-             gap: 15px;
-             align-items: center;
-             margin: auto;
-             padding-left: 15px;
-             padding-right: 15px;
-             padding-top: 13px;
-         }
-    
-         .customers-section h2 {
-             font-weight: 700px;
-             font-size: 28px;
-             line-height: 3.01;
-             text-align: center;
-             color: var(--header-color);
-             margin-top: 50px;
-         }
-    
-         .customers:hover {
-             border: 1px solid var(--hover-color);
-             fill: var(--hover-color);
-         }
+.regular-customers-mobile ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+   margin: auto;
+     margin-bottom: 60px;
+}
+
+.regular-customers-mobile li{
+    flex-basis: calc((100%-45px)/3);
+    margin: auto;
+    width: 30%;
+}
 
     .footer-section .footer-container-d {
         display: none;
@@ -1414,13 +1338,15 @@ font-family: Roboto;
     .footer-container-m {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .footer-container-m .footer-section1 {
         display: flex;
         flex-direction: column;
-        margin-left: 170px;
+        margin-left: 90px;
         padding-top: 80px;
+        padding-right: 80px;
     }
 
     .tablet {
@@ -1459,7 +1385,7 @@ font-family: Roboto;
         display: flex;
         flex-direction: column;
         margin-top: 112px;
-        margin-right: 170px;
+        margin-right: 90px;
     }
 
     .footer-container-m .footer-section2 .footer-svg {
